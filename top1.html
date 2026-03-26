@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FLEX 布局</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        background-color: #eee;
+      }
+
+      * {
+        border: 1px solid rgb(29, 27, 27);
+      }
+      .flex {
+        display: flex;
+      }
+
+      .baise {
+        background-color: white;
+      }
+
+      .flex1 {
+        flex: 1;
+      }
+
+      .column {
+        flex-direction: column;
+      }
+
+      .mg8 {
+        margin: 8px;
+      }
+
+      .mgr8 {
+        margin-right: 9px;
+      }
+
+      .mgt8 {
+        margin-top: 8px;
+      }
+      .caidan {
+        padding: 10px 20px;
+        border-bottom: #eee 1px solid;
+        font-size: 14px;
+        color: #666;
+      }
+    </style>
+  </head>
+
+  <body class="flex">
+    <!-- 侧边栏 -->
+    <div style="width: 200px; z-index: 2" class="baise">
+      <!--头像栏-->
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          padding: 14px;
+          align-items: center;
+          justify-self: center;
+          border-bottom: 1px solid #100f0f;
+          width: 100%;
+          box-sizing: border-box;
+        "
+      >
+        <img src="Demonszhengjianzhao.jpg" width="100px" height="140px" />
+        <div>Demons</div>
+      </div>
+      <!--菜单栏-->
+      <div class="flex1">
+        <div class="caidan">菜单1</div>
+        <div class="caidan">菜单2</div>
+        <div class="caidan">菜单3</div>
+        <div class="caidan">菜单4</div>
+        <div class="caidan">菜单5</div>
+        <div class="caidan">菜单6</div>
+        <div class="caidan">菜单7</div>
+        <div class="caidan">菜单8</div>
+        <div class="caidan">菜单9</div>
+        <div class="caidan">菜单10</div>
+      </div>
+    </div>
+    <!--主区域-->
+    <div class="flex1 flex column">
+      <!--头部区-->
+      <div style="height: 60px; z-index: 1" class="baise"></div>
+      <!--内容区-->
+      <div class="flex1 flex" style="overflow: auto">
+        <!--左区-->
+        <div style="flex: 3" class="flex column mg8">
+          <!--数据区-->
+          <div class="flex">
+            <div style="height: 100px" class="flex1 baise mgr8"></div>
+            <div style="height: 100px" class="flex1 baise mgr8"></div>
+            <div style="height: 100px" class="flex1 baise mgr8"></div>
+            <div style="height: 100px" class="flex1 baise"></div>
+          </div>
+          <!--列表区-->
+          <div class="flex column">
+            <!--列表项-->
+            <div style="height: 160px" class="baise mgt8"></div>
+            <!--列表项-->
+            <div style="height: 160px" class="baise mgt8"></div>
+            <!--列表项-->
+            <div style="height: 160px" class="baise mgt8"></div>
+            <!--列表项-->
+            <div style="height: 160px" class="baise mgt8"></div>
+            <!--列表项-->
+            <div style="height: 160px" class="baise mgt8"></div>
+            <!--列表项-->
+            <div style="height: 160px" class="baise mgt8"></div>
+            <!--列表项-->
+            <div style="height: 160px" class="baise mgt8"></div>
+            <!--列表项-->
+            <div style="height: 160px" class="baise mgt8"></div>
+          </div>
+        </div>
+        <!--右区-->
+        <div style="flex: 1" class="flex column mgt8">
+          <!--提示区-->
+          <div style="height: 150px" class="baise"></div>
+          <!--消息区-->
+          <div style="height: 300px" class="baise mgt8"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
