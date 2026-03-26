@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Demons的学习记录页，日常代码学习和练习" />
     <title>FLEX 布局</title>
     <style>
       body {
@@ -53,22 +54,29 @@
   <body class="flex">
     <!-- 侧边栏 -->
     <div style="width: 200px; z-index: 2" class="baise">
-      <!--头像栏-->
-      <div
-        style="
-          display: flex;
-          flex-direction: column;
-          padding: 14px;
-          align-items: center;
-          justify-self: center;
-          border-bottom: 1px solid #100f0f;
-          width: 100%;
-          box-sizing: border-box;
-        "
-      >
-        <img src="Demonszhengjianzhao.jpg" width="100px" height="140px" />
-        <div>Demons</div>
-      </div>
+      <main>
+        <!--头像栏-->
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            padding: 14px;
+            align-items: center;
+            justify-self: center;
+            border-bottom: 1px solid #100f0f;
+            width: 100%;
+            box-sizing: border-box;
+          "
+        >
+          <img
+            src="Demonszhengjianzhao.jpg"
+            alt="张凯文证件照"
+            width="100px"
+            height="140px"
+          />
+          <div>Demons</div>
+        </div>
+      </main>
       <!--菜单栏-->
       <div class="flex1">
         <div class="caidan">菜单1</div>
